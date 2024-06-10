@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Computer Science Courses</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Computer Science Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us using the contact form below or through our email and phone number.</p>
+        
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name " required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email " required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> prasad9322209799@gmail.com</p>
+            <p><strong>Phone:</strong> +91-9322209799</p>
+            <p><strong>Address:</strong> Dharashiv, Maharashtra, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Computer Science Courses. All rights reserved.</p>
+        <p>Designed by Prasad Deshmukh</p>
+    </footer>
+</body>
+</html>

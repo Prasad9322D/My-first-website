@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for a Course - Computer Science Courses</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <h1>Computer Science Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="register">
+        <h2>Register for a Course</h2>
+        <p>Fill out the form below to register for one of our computer science courses.</p>
+        <form action="submit_registration.php" method="post" id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name " required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email " required>
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="intro_programming">Introduction to Programming</option>
+                    <option value="data_structures">Data Structures and Algorithms</option>
+                    <option value="web_development">Web Development</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Computer Science Courses. All rights reserved.</p>
+        <p>Designed by Prasad Deshmukh</p>
+    </footer>
+</body>
+</html>
